@@ -3,7 +3,7 @@
     padding: 0;
     display: grid;
     grid-template-columns: 200px 1fr;
-    grid-template-rows: 100px 1fr 50px;
+    grid-template-rows: 100px 1fr auto;
     grid-template-areas:
         "header header "
         "sidebar content "
@@ -54,6 +54,7 @@ ul {
 
 .footer {
     grid-area: footer;
+    padding: 1%;
 
     background-color: black;
     color: white;
@@ -61,7 +62,7 @@ ul {
     display: grid;
     grid-template-columns: auto 1fr auto;
 
-    align-items: center;
+    
 }
 
 .f1 {
@@ -111,7 +112,7 @@ ul {
         display: grid;
         grid-template-columns: 1fr;
         
-        grid-template-rows: 30px 30px 30px;
+        grid-template-rows: repeat(3,30px);
         
 
     }
